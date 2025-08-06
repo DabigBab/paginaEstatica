@@ -2,13 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Página de Prueba</title>
+    <title>Laboratorio HTML, CSS, JS</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Esta es una página de prueba para GitHub Pages.</p>
-    <button onclick="saludar()">Haz clic aquí</button>
+    <h1>Laboratorio de Pruebas</h1>
+
+    <section>
+        <h2>Alertas y botones</h2>
+        <button onclick="mostrarAlerta()">Alerta simple</button>
+        <button onclick="confirmar()">Confirmación</button>
+        <button onclick="solicitarNombre()">Prompt</button>
+    </section>
+
+    <section>
+        <h2>Tarjetas</h2>
+        <div class="tarjeta">
+            <h3>Tarjeta 1</h3>
+            <p>Este es un ejemplo de tarjeta con sombra y estilo.</p>
+        </div>
+        <div class="tarjeta animada">
+            <h3>Tarjeta animada</h3>
+            <p>Esta tarjeta tiene una animación de entrada.</p>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
