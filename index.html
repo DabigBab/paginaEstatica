@@ -26,6 +26,40 @@
             <p>Esta tarjeta tiene una animación de entrada.</p>
         </div>
     </section>
+    <section>
+        <h2>Carrusel de Imágenes</h2>
+        <div class="carrusel">
+            <img id="imagen-carrusel" src="img/img1.jpg" alt="Imagen del carrusel">
+            <div class="controles">
+                <button onclick="anterior()">⏮️ Anterior</button>
+                <button onclick="siguiente()">⏭️ Siguiente</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Modal personalizado</h2>
+        <button onclick="abrirModal()">Abrir Modal</button>
+
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <h3>Hola desde el modal 👋</h3>
+                <p>Este es un modal personalizado con HTML, CSS y JS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Consumir API Externa</h2>
+        <button onclick="obtenerUsuario()">Obtener usuario aleatorio</button>
+
+        <div id="usuario" class="tarjeta" style="display: none;">
+            <img id="fotoUsuario" src="" alt="Foto del usuario" style="width:100px; border-radius:50%;">
+            <h3 id="nombreUsuario"></h3>
+            <p id="paisUsuario"></p>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
